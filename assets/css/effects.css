@@ -1,0 +1,161 @@
+/* Modern Color Scheme */
+:root {
+    --primary-color: #2ecc71;
+    --secondary-color: #3498db;
+    --accent-color: #e74c3c;
+    --background-color: #f0f3f6;
+    --dark-bg: #2c3e50;
+    --card-bg: #ffffff;
+}
+
+/* Card Styles */
+.card {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+/* Water Wave Effect */
+.water-wave {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        45deg,
+        rgba(46, 204, 113, 0.1),
+        rgba(52, 152, 219, 0.1)
+    );
+    pointer-events: none;
+    z-index: -1;
+    animation: wave 8s infinite linear;
+}
+
+@keyframes wave {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Floating Bubbles */
+.bubble {
+    position: fixed;
+    background: radial-gradient(
+        circle at 30% 30%,
+        rgba(255, 255, 255, 0.9),
+        rgba(255, 255, 255, 0.4)
+    );
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: -1;
+    animation: float 6s infinite ease-in-out;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(100vh) scale(0);
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.8;
+    }
+    100% {
+        transform: translateY(-100vh) scale(1);
+        opacity: 0;
+    }
+}
+
+/* Modern Button Styles */
+.btn {
+    transition: all 0.3s ease;
+    transform-style: preserve-3d;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(255, 255, 255, 0.3),
+        transparent
+    );
+    transition: 0.5s;
+}
+
+.btn:hover:before {
+    left: 100%;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--background-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 5px;
+}
+
+/* Modern Navigation */
+.navbar {
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.8) !important;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Enhancement */
+.footer {
+    background: linear-gradient(135deg, var(--dark-bg), var(--primary-color));
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Card Content Enhancement */
+.card-body {
+    background: linear-gradient(135deg, var(--card-bg), #f8f9fa);
+    border-radius: 15px;
+}
+
+/* Glow Effect for Important Elements */
+.glow-effect {
+    box-shadow: 0 0 15px rgba(46, 204, 113, 0.3);
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        box-shadow: 0 0 15px rgba(46, 204, 113, 0.3);
+    }
+    to {
+        box-shadow: 0 0 25px rgba(46, 204, 113, 0.5);
+    }
+}
+
+/* Background Grid Pattern */
+.bg-pattern {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+                      linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+    background-size: 20px 20px;
+}
