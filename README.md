@@ -8,7 +8,7 @@ The **Smart Crop Management System** is a web-based application designed to assi
 3. **Rainfall Prediction**: Predict rainfall patterns to assist in irrigation planning.
 4. **Crop Recommendation**: Recommend crops based on soil and environmental conditions.
 5. **Fertilizer Recommendation**: Suggest fertilizers based on soil nutrient levels and crop requirements.
-6. **Real-Time Dashboard**: Monitor real-time environmental and soil data.
+6. **Real-Time Monitoring**: Monitor real-time environmental and soil data.
 7. **Smart Crop Suggestions**: Provide tailored crop suggestions based on soil characteristics.
 
 ## Screen Shot
@@ -21,6 +21,13 @@ The **Smart Crop Management System** is a web-based application designed to assi
 4.**Crop Recommendation**:
 ![crop recommendation](https://github.com/user-attachments/assets/a9c6eb8a-0459-460f-9565-23e662f828c7)
 5.**Fertilizer Recommendation**:
+![ferti recommendation](https://github.com/user-attachments/assets/1f4ef34b-5c20-4894-8413-ee01c85b6f3e)
+6.**Real-Time Monitoring**:
+![real time monitoring](https://github.com/user-attachments/assets/851aba1b-eaaa-45fb-81f8-a0942f6c692e)
+7.**Smart Crop Monitoring**:
+![smart crop suggestion system](https://github.com/user-attachments/assets/0e2f5b4f-0c3b-4cb7-9578-e87df770016e)
+
+
 
 
 
